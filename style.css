@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #87CEEB;
+}
+
+header {
+
+    font-size: x-large;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px;
+    overflow: hidden;
+    border: none;
+    font: normal "VT323", Helvetica, sans-serif;
+    color: rgba(255, 255, 0, 1);
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    text-shadow: 5px 5px 0 rgba(255, 0, 0, 1);
+
+}
+
+
+.game-board {
+
+    border-bottom: 13px solid green;
+    width: 100%;
+    height: 500px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#87CEEB, #E0F6FF);
+}
+
+.score {
+    position: absolute;
+    top: 30px;
+    left: 0p;
+    font-size: x-large;
+
+
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px;
+    overflow: hidden;
+    border: none;
+    font: normal 70px/1 "VT323", Helvetica, sans-serif;
+    color: rgba(255, 255, 0, 1);
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    text-shadow: 5px 5px 0 rgba(255, 0, 0, 1);
+}
+
+
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+
+
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.pipe {
+
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+
+    animation: pipe-animation 1.5s infinite linear;
+}
+
+
+.clouds {
+    width: 550px;
+    position: absolute;
+    animation: clouds-animation 25s infinite linear;
+}
+
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 200px;
+    }
+
+    60% {
+        bottom: 190px;
+    }
+
+    80% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+
+
+footer {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    margin-left: 1.5%;
+    margin-bottom: 120px;
+
+}
+
+.Pokemon {
+    padding: 10px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    height: 20%;
+
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px;
+    overflow: hidden;
+    border: none;
+    font: normal 70px/1 "VT323", Helvetica, sans-serif;
+    color: rgba(255, 255, 0, 1);
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    text-shadow: 5px 5px 0 rgba(255, 0, 0, 1);
+    border-radius: 20px;
+    border: 5px solid green;
+}
+
+.Mario {
+    padding: 10px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    height: 20%;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px;
+    overflow: hidden;
+    border: none;
+    font: normal 70px/1 "VT323", Helvetica, sans-serif;
+    color: rgba(255, 255, 0, 1);
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    text-shadow: 5px 5px 0 rgba(255, 0, 0, 1);
+    border-radius: 20px;
+    border: 5px solid green;
+}
+
+.home {
+    padding: 10px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    height: 20%;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 10px;
+    overflow: hidden;
+    border: none;
+    font: normal 70px/1 "VT323", Helvetica, sans-serif;
+    color: rgba(255, 255, 0, 1);
+    text-align: center;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    border-radius: 20px;
+    border: 5px solid green;
+}
